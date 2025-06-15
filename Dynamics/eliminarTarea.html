@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tareas.css">
+    <link rel="javascript" href="./tarea.js">
+    <title>Organización de tareas</title>
+</head>
+<body>
+    <div id="Control">
+        <button class="botones" id="boton1" onclick="crear()">Nueva tarea</button>
+        <button class="botones" id="boton2" onclick="eliminar()">Eliminar tarea</button>
+    </div>
+    <div>
+        <section id="contenedor">
+            <div class="elemento">Tarea</div>
+        </section>
+    </div>
+    
+</body>
+<script>
+    function crear(){
+        elemento = document.createElement("elemento");
+        console.log("l");
+        p1=elemento.style.display==="none";
+        console.log("l");
+        elemento.style.display=p1? "line" : "none";
+        /*visible=elemento.style.display==="none";
+            elemento.style.display=visible? "line":"none";*/
+    }
+
+
+
+
+
+    /*botonCrea.addEventListener("click", ()=>{
+        visible=info.style.display==="none";
+        info.style.display=visible? "line":"none"
+    })*/
+</script>
+</html>
